@@ -550,7 +550,7 @@ function initFormAdvancedUI() {
         });
     }
 
-    observer = new MutationObserver(callback);
+    let observer = new MutationObserver(callback);
     // observe all striped tables on page for style changes
     targetNodes.each(function(index, node) {
         observer.observe(node, config);
